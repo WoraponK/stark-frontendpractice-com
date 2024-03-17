@@ -1,0 +1,58 @@
+.main-footer {
+    background-color: $clr-blue;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 10rem;
+    row-gap: 5rem;
+    color: $clr-light;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            font-size: 3rem;
+        }
+
+        &-logo {
+            font-size: 4rem;
+        }
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+
+        a {
+            color: $clr-light;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-social {
+            li {
+                font-size: 1.5rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &-copyright {
+            color: $clr-yellow;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}

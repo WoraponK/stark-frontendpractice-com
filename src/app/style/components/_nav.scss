@@ -1,0 +1,30 @@
+.nav-x {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        span {
+            margin-left: 5px;
+        }
+    }
+}
+
+.nav-y {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    h4 {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    li {
+        span {
+            margin-left: 5px;
+        }
+    }
+}

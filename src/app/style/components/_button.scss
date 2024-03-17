@@ -1,0 +1,49 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: 14px;
+    user-select: none;
+    letter-spacing: 1px;
+
+    &:active {
+        transition: $transition-all;
+        scale: 95%;
+    }
+
+    &-primary {
+        background-color: $clr-primary;
+        color: $clr-light;
+        transition: $transition-all;
+
+        &:hover {
+            background-color: lighten($clr-primary, 10%);
+        }
+    }
+
+    &-borderless {
+        background-color: transparent;
+        color: $clr-primary;
+
+        &:hover {
+            outline: 2px solid $clr-primary;
+        }
+    }
+}
+
+.btn-group {
+    &-x {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    &-y {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
