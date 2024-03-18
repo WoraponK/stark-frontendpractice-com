@@ -53,7 +53,7 @@
 .card-feature {
     height: 326px;
     display: grid;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 35% 65%;
     overflow: hidden;
     border-radius: $rounded;
     cursor: pointer;
@@ -73,7 +73,7 @@
         padding: 1.5rem;
         font-size: 1.5rem;
         font-weight: 800;
-        @include line-clamp-3;
+        @include line-clamp-4;
     }
 
     &__img {
@@ -81,13 +81,12 @@
         width: 100%;
         display: flex;
         justify-content: end;
-        align-items: center;
+        align-items: end;
+        overflow: hidden;
 
         img {
-            height: 100%;
             width: 100%;
             object-fit: cover;
-            object-position: end;
         }
     }
 }

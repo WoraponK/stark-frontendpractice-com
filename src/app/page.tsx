@@ -51,19 +51,16 @@ const HomePage = () => {
         <CardFeature 
           title='Disability Employment'
           bgClr='#F6F6EA'
-          textClr='#00000'
-          imgUrl='https://res.cloudinary.com/stark-lab/image/upload/v1653845745/library_collection_Tips_for_Designers_80f5675abb.png'
+          imgUrl='https://res.cloudinary.com/stark-lab/image/upload/v1653845742/library_collection_Collection_Boundless_Disability_Employment_c297d236d9.png'
         />
         <CardFeature 
           title='Making Accessible Color Combos'
-          bgClr='#9CC1E6'
-          textClr='#00000'
+          bgClr='#F3F2FC'
           imgUrl='https://res.cloudinary.com/stark-lab/image/upload/v1653845743/library_collection_making_accessible_color_combos_42c8d90a99.png'
         />
         <CardFeature  
           title='Tips and Tricks for Inclusive Social Media'
           bgClr='#F6F6EB'
-          textClr='#00000'
           imgUrl='https://res.cloudinary.com/stark-lab/image/upload/v1653845743/library_collection_Inclusive_Social_Media_b9669e6d39.png'
         />
       </ContentBox>

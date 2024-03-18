@@ -2,7 +2,7 @@ import React from 'react'
 
 interface ContentBoxProps {
     title: string;
-    description: string;
+    description?: string;
     isViewall: boolean;
     children?: React.ReactNode;
 }
