@@ -1,10 +1,11 @@
 import React from 'react'
 
+// Icons
 import { FaCentercode, FaSlack, FaYoutube, FaInstagram, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className='main-footer'>
+        <footer className='main-footer wrapper'>
             <div className='main-footer__header'>
                 <h2 className='main-footer__header-title'>
                     Made remotely with love by <br /> Start Lab, Inc

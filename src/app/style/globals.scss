@@ -2,12 +2,20 @@
 @import './base/reset';
 @import './base/variables';
 @import './base/typography';
+@import './base/contents';
 
 // Layout
 @import './layout/Header.scss';
 @import './layout/Footer.scss';
+@import './layout/SearchLibrary.scss';
 @import './layout/HomePage.scss';
+@import './layout/ContentBox.scss';
+
+// Utils
+@import './utils/line-clamp';
 
 // Components
 @import './components/nav';
 @import './components/button';
+@import './components/search';
+@import './components/card';

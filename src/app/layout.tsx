@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SearchLibrary from './components/SearchLibrary'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
         <Header />
-        {children}
+        <div className="contents wrapper">
+          <SearchLibrary />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

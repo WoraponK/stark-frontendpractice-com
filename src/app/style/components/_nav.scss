@@ -27,4 +27,21 @@
             margin-left: 5px;
         }
     }
+
+    &-lg {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            span {
+                display: flex;
+            }
+        }
+    }
 }

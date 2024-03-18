@@ -1,0 +1,93 @@
+.card-blog {
+    height: 236px;
+    outline: 1px solid $clr-gray-50;
+    padding: 1rem;
+    border-radius: $rounded;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+    cursor: pointer;
+    transition: $transition-all;
+
+    &:hover {
+        outline: 1px solid $clr-gray-75;
+    }
+
+    &:active {
+        scale: .98;
+    }
+
+    &__img {
+        border-radius: $rounded;
+        border: 1px solid $clr-gray-50;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 1rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &-category {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 800;
+        color: $clr-primary;
+    }
+
+    &-title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        @include line-clamp-3;
+    }
+}
+
+.card-feature {
+    height: 326px;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    overflow: hidden;
+    border-radius: $rounded;
+    cursor: pointer;
+    transition: $transition-all;
+    outline: 1px solid $clr-light;
+
+    &:hover {
+        transition: $transition-all;
+        outline: 1px solid $clr-gray-50;
+    }
+
+    &:active {
+        scale: .98;
+    }
+
+    &-title {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+        @include line-clamp-3;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: end;
+        }
+    }
+}

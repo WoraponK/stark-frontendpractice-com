@@ -1,0 +1,33 @@
+.search {
+    display: flex;
+    align-items: center;
+    border: 2px solid $clr-gray-75;
+    padding: .5rem;
+    border-radius: $rounded;
+
+    &:focus-within {
+        border: 2px solid $clr-primary;
+        transition: $transition-all;
+
+        span {
+            transition: $transition-all;
+            color: $clr-primary;
+        }
+    }
+
+    span {
+        display: flex;
+        color: $clr-gray-75;
+        margin-right: .5rem;
+    }
+
+    input[type='text'] {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 1rem;
+
+    }
+
+
+}

@@ -1,0 +1,12 @@
+.wrapper {
+    padding: 4rem 10rem;
+}
+
+.wrapper-x {
+    padding: 0 10rem;
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}

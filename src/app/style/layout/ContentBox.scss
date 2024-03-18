@@ -1,0 +1,45 @@
+.content-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            row-gap: .25rem;
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 800;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+
+        &-right {
+            a {
+                color: $clr-primary;
+                text-decoration: underline;
+                font-weight: 600;
+                transition: $transition-all;
+
+                &:hover {
+                    color: lighten($clr-primary, 20%);
+                }
+            }
+        }
+    }
+
+    &__contents {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
